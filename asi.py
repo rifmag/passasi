@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from openpyxl import load_workbook
 
 # Fungsi untuk membaca data dari file Excel
 def read_excel_data(file_path):
