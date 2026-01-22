@@ -2,6 +2,40 @@ import streamlit as st
 import pandas as pd
 from openpyxl import load_workbook
 
+st.markdown(
+    """
+    <style>
+    .block-container {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .stApp {
+        background: #40e0d0;
+    }
+
+
+    .content {
+        max-width: 720px;
+        margin: auto;
+        color: white;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        color: black;
+        margin-top: 30px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown('<div class="content">', unsafe_allow_html=True)
+
 # Fungsi untuk membaca data dari file Excel
 def read_excel_data(file_path):
     data = pd.read_excel(file_path)
@@ -62,7 +96,8 @@ def main():
                 st.success(" Sertifikat ditemukan. Silahkan klik tautan diatas")
             else:
                 st.warning("Data tidak ditemukan untuk NIP dan OTP tersebut.")
-
+st.markdown('</div>', unsafe_allow_html=True)  # content
 if __name__ == "__main__":
     main()
+
 
