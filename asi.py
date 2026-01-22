@@ -56,7 +56,7 @@ def main():
     data = read_excel_data("datasertif.xlsx")  # Ganti dengan path file Excel Anda
 
     # Isian NIP dan OTP
-    nip_input = st.text_input("Masukkan NIP:", "").strip()
+    nip_input = st.text_input("Masukkan NIP/NRP:", "").strip()
     otp_input = st.text_input("Masukkan OTP:", "").strip()
     st.markdown("<small>masukkan OTP dengan tanggal lahir Anda dengan format : <b>dd/mm/yyyy</b> contoh : <b>06091988</b></small>" , unsafe_allow_html=True)
     if st.button("Tampilkan"):
@@ -99,6 +99,7 @@ def main():
 st.markdown('</div>', unsafe_allow_html=True)  # content
 if __name__ == "__main__":
     main()
+
 
 
 
