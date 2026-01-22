@@ -49,7 +49,7 @@ def main():
     st.title("")
 
     # Logo in the top-right corner
-    logo = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi9L7E2_2WuGtZqM03fu_AcQzq1cdlGrcp_27Vu3W0E1XyfU730QqtbiXNheHLZ4SuMw&usqp=CAU" style="float:left;">'
+    logo = '<img src="https://klcstatic.kemenkeu.go.id/portal-bppk-static/app_portal/images/corpu-samping.png" style="float:left;">'
     st.markdown(logo, unsafe_allow_html=True)
 
     # Baca data dari file Excel
@@ -99,5 +99,6 @@ def main():
 st.markdown('</div>', unsafe_allow_html=True)  # content
 if __name__ == "__main__":
     main()
+
 
 
