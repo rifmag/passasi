@@ -88,7 +88,7 @@ def main():
                             st.markdown(value)
 
                     st.divider()
-                    st.link_button("🔗 Buka Sertifikat", student_link)
+                    st.link_button("🔗 Unduh Sertifikat", student_link)
 
 
 
@@ -99,6 +99,7 @@ def main():
 st.markdown('</div>', unsafe_allow_html=True)  # content
 if __name__ == "__main__":
     main()
+
 
 
 
