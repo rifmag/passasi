@@ -57,8 +57,8 @@ def main():
 
     # Isian NIP dan OTP
     nip_input = st.text_input("Masukkan NIP/NRP:", "").strip()
-    otp_input = st.text_input("Masukkan OTP:", "").strip()
-    st.markdown("<small>masukkan OTP dengan tanggal lahir Anda dengan format : <b>dd/mm/yyyy</b> contoh : <b>06091988</b></small>" , unsafe_allow_html=True)
+    otp_input = st.text_input("Masukkan Password:", "").strip()
+    st.markdown("<small>masukkan Password dengan tanggal lahir Anda dengan format : <b>dd/mm/yyyy</b> contoh : <b>06091988</b></small>" , unsafe_allow_html=True)
     if st.button("Tampilkan"):
         if nip_input and otp_input:
             student_data = cari_data_berdasarkan_nip_otp(data, int(nip_input), int(otp_input))
@@ -99,6 +99,7 @@ def main():
 st.markdown('</div>', unsafe_allow_html=True)  # content
 if __name__ == "__main__":
     main()
+
 
 
 
